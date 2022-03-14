@@ -1,12 +1,12 @@
 $(function () {
-
-   $('.mainSlide').slick({
-       arrows:true, 
-       autoplay:true,
-       autoplayspeed:20000,
-       dots:true,
-   });
-
-    $('main-visual sliderArrows i:first-child').on ('click',function(){
+    //////////////////////////////////////
+    $('.mainSlide').slick({
+        arrows: false,
+        autoplay: true,
+        autoplayspeed: 2000,
+        dots: true,
     });
+
+    $('main-visual sliderArrows i:first-child').on('click', function () {});
+    //////////////////////////////////////
 });
