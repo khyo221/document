@@ -1,24 +1,175 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>학원에서 배우는 것</title>
+    <style>
+        li {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
 </head>
+
 <body>
     <h1>HTML / CSS / JQUERY document</h1>
-
+    <!-- h1 html에서 하나밖에 안나옴 -->
     <hr>
+    <!-- 바 -->
 
     <h2>HTML / CSS </h2>
 
+    <ol>
+        <li>
+            <a href="./doc/box01.html" target="_blank">box-model01</a>
+            <p>
+                박스모델 01 - 요소에 대한 기본 성질을 설명한다.<br>
+                * box는 display:block; 속성을 가진다<br>
+                1.box는 투명하다<br>
+                2.box는 width::auto;로 꽉 채운다 <br>
+                3.box는 옆에 다른 요소가 오지 못한다.<br>
+                <br>
+                * inline 요소<br>
+                1.inline 요소는 width height값을 가지지 못한다.<br>
+                2.inline 요소는 아래위 margin padding값을 가지지 못한다.<br>
+                3.inline 요소는 좌우 margin padding값을 가진다.
+            </p>
+            <em>2022.03.04</em>
+        </li>
+        <li>
+            <a href="./doc/box02.html" target="_blank">box-model02</a>
+            <p>박스모델 02 - 요소를 좌우 가운데 위치시키기 <br>
+                margin: 0 auto; (block요소)<br>
+                text-align: center; (inline요소)<br>
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/box03.html" target="_blank">box-model03</a>
+            <p>박스모델 03 - 요소를 겹쳐서 사용하기<br>
+                ul (unorder list) 순서 번호가 붙지 않는 list <br>
+                list는 list item만 자식으로 가진다 </p>
+            <em>2022.03.08</em>
+        </li>
+        <li>
+            <a href="./doc/display01.html" target="_blank">display01</a>
+            <p>디스플레이 01- 디스플레이에 대해서 알아보자. <br>
+                display: none;<br>
+                display: block;<br></p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/flex01.html" target="_blank">flex01</a>
+            <p>플렉스01 - box를 가로로 배치하는 방법01<br>
+                display: flex 속성을 선언<br>
+                +) 시맨틱 태그 - header,main,sectin,footer,nav,article,aside,figure<br></p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/flex02.html" target="_blank">flex02</a>
+            <p>플렉스02 <br>
+                플렉스는 부모요소에 적용<br>
+                justify-content: flex-end;<br>
+                justify-content: center;<br>
+                justify-content: space-between;<br>
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/flex03.html" target="_blank">flex03</a>
+            <p>플렉스03 <br>
+                플렉스 속성 이용해보기</p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/float01.html" target="_blank">float01</a>
+            <p>플롯01 - box를 가로로 배치하는 방법01<br>
+                *float <br>
+                1.쪼그라든다.<br>
+                2.떠오른다. 감싸고 있는 요소들의 높이를 0으로 만든다<br>
+                3.clearfix를 시용해서 부모요소로 담겨진다 <br>
+                부모:after{content:""; display:block; clear:both;} <br>
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/font01.html" target="_blank">font01</a>
+            <p>웹폰트 사용하기 <br>
+                구글 웹폰트 </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/grid01.html" target="_blank">grid01</a>
+            <p>그리드01 - box를 가로로 배치하는 방법01 <br>
+                display: grid;</p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/Js_Jquery.html" target="_blank">Js_Jquery</a>
+            <p>jquery(jauery libray after load)</p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/layout01.html" target="_blank">layout01</a>
+            <p>기본 레이아웃 01 <br>
+                basic float layout</p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/layout02.html" target="_blank">layout02</a>
+            <p>기본 레이아웃 02 <br>
+                레이아웃 section 3/4/5/6/2 실습하기 </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/layout03.html" target="_blank">layout03</a>
+            <p> 기본 레이아웃 03 <br>
+                기본 레이아웃 02 풀이</p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/position01.html" target="_blank">position01</a>
+            <p>포지션01 - 기초편 <br>
+                position: static;--포지션이 아니게 한다<br>
+                position: absolute; -좌표를 가진다.top,left,bottom,right(뜬다.쪼그라든다.body가 기준이된다.)<br>
+                position: relative; -기준이 된다. 좌표를 가진다. 떠오르지 않고 공간을 차지한다. 쪼그라들지 않는다<br>
+                position:fixed;--화면을 기준으로 떠오른다. 좌표를 가진다. 다른 기준따위는 없다<br>
+                position:sticky; - 박스처럼 있다가 마우스를 내리면 픽스드가 된다 </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/position02.html" target="_blank">position02</a>
+            <p>포지션02<br>
+                position속성 이용해보기</p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/webicon01.html" target="_blank">webicon01</a>
+            <p>웹아이콘 사용하기 01 <br>
+                font awesome 4/ 부트스트랩아이콘 / xeicon 등</p>
+            <em>2022.03.07</em>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>layout</h2>
+
     <ul>
         <li>
-            <a href="./doc/box01.html" target="_blank">box-model</a>
-            <p>첫 수업은 박스 모델에 대한 설명...</p>
+            <a href="./all_layout01.hmtl">기본레이아웃</a>
+            <p>
+                기본레이아웃 짜기: 큰틀을 짜기
+            </p>
+            <em>2022.03.14</em>
         </li>
     </ul>
-   
+    <!-- 인라인일떄 한줄로 많이씀 -->
+
 </body>
+
 </html>
