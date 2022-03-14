@@ -1,0 +1,88 @@
+.mainVisual .itm01{
+    height: 60vh;
+   background:no-repeat;
+   background-position-x: center;
+   background-position-y: center;
+   background-size: cover;
+}
+
+.mainVisual {
+    position: relative;
+
+}
+.mainVisual .itm01{
+    background: url(../img/main_slider_n01.jpg);
+}
+.mainVisual .itm01{
+    background: url(../img/main_slider_n02.jpg);
+}
+.mainVisual .itm01{
+    background: url(../img/main_slider_n03.jpg);
+}
+.mainVisual .slick-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transform: translateX(-50%);
+    
+}
+.mainVisual .slick-dots li {
+   
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: #ff0;
+    cursor: pointer;
+}
+.mainVisual .slick-arrow{
+    position: absolute;
+    z-index: 999;
+
+    width: 100px;
+    height: 100px;
+
+    border: none;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+    background:transparent;
+    text-indent: -99999px;
+}
+
+.mainVisual .slick-prev{
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.mainVisual .slick-next{
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+
+.mainVisual .slick-dots li.slick-active{
+    background: #444;
+}
+.mainVisual .slick-dots button{
+    display: none;
+}
+.mainVisual.slideArrows i {
+    position: absolute;
+    top: 50%;
+    font-size:100px;
+    color: rgba(255,255,225,0.5);
+    transform: translateY(-50%);
+
+}
+.mainVisual .slidweArrow i:first-child{
+    left: 100px;
+}
+
+.mainVisual .slidweArrow i:last-child{
+    right: 100px;
+}
