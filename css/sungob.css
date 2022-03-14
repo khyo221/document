@@ -46,3 +46,22 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 
 
 
+ /* position:static;포지션이아니게한다
+  position:absolute;좌표를가진다
+  뜬다쪼그라든다body가기준이된다
+  position:relative;기준이된다
+  position:fixed;화면을기준으로떠오른다 */
+  
+
+  /* display:none; --없어져라
+  display:block;--나타나라//box가 되어라
+  display:inline;--글자처럼 box속성을 없애라.
+  display:inline-block;--중요. 레이아웃에서 중요한 요소. box이지만 가로배열 한다
+  (box의 속성 :width,height,margin,padding전부 가진다
+  inline의 속성: 가로배열,text-align속성으로 중앙배열 할수있다.사이가 띄워져있다
+  
+  display:table;
+  display:flex;
+  displat:grid;
+  +vertical align) */
+
