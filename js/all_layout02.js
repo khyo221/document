@@ -7,6 +7,12 @@ $(function () {
         dots: true,
     });
 
-    $('main-visual sliderArrows i:first-child').on('click', function () {});
-    //////////////////////////////////////
+    $('.mainVisual .slideArrows i:first-child').on('click', function () {
+        $('.mainSlide').slick('slickPrev')
+    });
+
+    $('.mainVisual .slideArrows i:last-child').on('click', function () {
+        $('.mainSlide').slick('slickNext')
+    });
+    ////////////////////////////////////// 
 });
