@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>플롯01 - box를  가로로 배치하는 방법01</title>
+    <title>플롯01 - box를 가로로 배치하는 방법01</title>
     <style>
         /* reset */
-        * {margin: 0;padding: 0;box-sizing: border-box;}
-        ul {list-style: none;}
-      section{
-          background-color: #ddd;
-          padding: 100px 0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container{
+
+        ul {
+            list-style: none;
+        }
+
+        section {
+            background-color: #ddd;
+            padding: 100px 0;
+        }
+
+        .container {
             width: 1200px;
             background-color: #f00;
             margin: 0 auto;
             border: 1px solid #333;
         }
+
         /*
          float - 요소들을 가로배치하는 방법1,
         1.쪼그라든다.
         2.떠오른다. 감싸고 있는 요소들의 높이를 0으로 만든다
-        3.clearfix를 시용해서 부모요소로 담겨진다 부모:after{content:""; display:block; clear:both;}
+        3.clearfix를 사용해서 부모요소로 담겨진다 
+        부모:after{content:""; display:block; clear:both;}
          */
 
 
-         .container:after{
-             content:""; 
-             display:block;
-              clear:both;}
+        .container:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
 
-        .container div{
+        .container div {
             float: left;
             background-color: #ff0;
-            width: 33.3333333%; 
+            width: 33.3333333%;
             /* 부모의 너비만큼 백프로 채워라 */
             padding: 0 15px;
         }
     </style>
 </head>
+
 <body>
     <!-- <div class="section"></div> -->
     <!-- 시멘틱 태그 - header,main,sectin,footer,nav,article,aside,figure -->
@@ -52,4 +66,5 @@
         </div>
     </section>
 </body>
+
 </html>

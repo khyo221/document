@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>플렉스02</title>
     <style>
-        *{margin: 0; padding: 0; box-sizing: border-box;}
-       .itm{width:200px;}
-       .itm:nth-child(1){background:#f00;} 
-       .itm:nth-child(2){background:#ff0;} 
-       .itm:nth-child(3){background:#00f;} 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-       .container{width: 1200px;margin: 100px auto;background: #333;}
+        .itm {
+            width: 200px;
+        }
 
-       .flex01{
-           display: flex;
-       }
-       .flex02{
-           display: flex;
-           justify-content: flex-end;
-       }
-       .flex03{
-           display: flex;
-           justify-content: center;
-       }
-       .flex04{
-           display: flex;
-           justify-content: space-between;
-       }
-       .flex05{
-        display: flex;
-       }
-       .flex05 .itm:nth-child(3){
-           margin-left: auto;
-       }
-       .flex06{
-        display: flex;
-       }
-       .flex06 .itm:nth-child(2){
-           flex: 1;
-           /* width: 800px;도됨, flex: 1;공부하기 */
-       }
-       /* 플렉스는 부모에다가 적용  */
+        .itm:nth-child(1) {
+            background: #f00;
+        }
+
+        .itm:nth-child(2) {
+            background: #ff0;
+        }
+
+        .itm:nth-child(3) {
+            background: #00f;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 100px auto;
+            background: #333;
+        }
+
+        .flex01 {
+            display: flex;
+        }
+
+        .flex02 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .flex03 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex04 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex05 {
+            display: flex;
+        }
+
+        .flex05 .itm:nth-child(3) {
+            margin-left: auto;
+            /* 왼쪽에 가능한한 가장 큰 마진을 준다 => 제일 오른쪽에 붙게된다. */
+        }
+
+        .flex06 {
+            display: flex;
+        }
+
+        .flex06 .itm:nth-child(2) {
+            flex: 1;
+            /* flex-grow: 1; flex-shrink: 1; flex-basis: 0%;
+            flex-grow, flex-shrink, flex-basis를 한 번에 쓸 수 있는 축약형 속성*/
+        }
+
+        /*  부모에다가 display: flex 속성을 선언하면 자식 요소가 inline스타일처럼 정렬됨  */
     </style>
 </head>
+
 <body>
-   <div class="container flex01">
-       <div class="itm">A</div>
-       <div class="itm">B</div>
-       <div class="itm">C</div>
-   </div> 
-   <div class="container flex02">
-       <div class="itm">A</div>
-       <div class="itm">B</div>
-       <div class="itm">C</div>
-   </div> 
-   <div class="container flex03">
-       <div class="itm">A</div>
-       <div class="itm">B</div>
-       <div class="itm">C</div>
-   </div> 
-   <div class="container flex04">
-       <div class="itm">A</div>
-       <div class="itm">B</div>
-       <div class="itm">C</div>
-   </div> 
-   <div class="container flex05">
-    <div class="itm">A</div>
-    <div class="itm">B</div>
-    <div class="itm">C</div>
-    </div> 
+    <div class="container flex01">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <div class="container flex02">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <div class="container flex03">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <div class="container flex04">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <div class="container flex05">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
     <div class="container flex06">
         <div class="itm">A</div>
         <div class="itm">B</div>
         <div class="itm">C</div>
-        </div>
+    </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,53 +8,85 @@
     <title>기본 레이아웃 01</title>
     <style>
         /* reset */
-        *{margin: 0;padding: 0;box-sizing: border-box;font-size: inherit;font-size: normal;color: inherit;}
-        ul,ol{list-style: none;}
-        a{text-decoration: none;}
-        img{vertical-align: middle;}
-        /* 이미지 사이 공간 없애줌 */
-        body{line-height: 1;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: inherit;
+            font-size: normal;
+            color: inherit;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* 사이 공간 없애줌 */
+        body {
+            line-height: 1;
+        }
 
         /* basic float layout */
-          h1{font-size: 30px; text-align: center; margin-bottom: 100px;}
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
 
-        .sc01{
+        .sc01 {
             padding: 100px 0;
             background-color: #f2f2f2;
             text-align: center;
         }
-        .sc01 h2{
+
+        .sc01 h2 {
             font-size: 30px;
             font-weight: bold;
             margin-bottom: 20px;
         }
-        .sc01>p{
+
+        .sc01>p {
             font-size: 15px;
             margin-bottom: 30px;
         }
-        .sc01 .container{
+
+        .sc01 .container {
             margin: 0 auto;
             width: 1200px;
         }
-        .sc01 .container::after{
+
+        .sc01 .container::after {
             content: "";
             display: block;
             clear: both;
         }
-        .sc01 figure{
+
+        .sc01 figure {
             float: left;
             width: 33.333333%;
             padding: 0 15px;
         }
-        .sc01 figure img{
+
+        .sc01 figure img {
             width: 100%;
             margin-bottom: 20px;
         }
-        .sc01 figure p{
+
+        .sc01 figure p {
             color: #f00;
             margin-bottom: 20px;
         }
-        .sc01 figure a{
+
+        .sc01 figure a {
             /* display는 가장 위에 줌 */
             display: block;
             margin: 0 auto;
@@ -64,9 +97,9 @@
             line-height: 30px;
             border-radius: 10px;
         }
-        
     </style>
 </head>
+
 <body>
     <h1>기본레이아웃 01</h1>
     <section class="sc01">
@@ -92,6 +125,7 @@
         </div>
     </section>
 </body>
+
 </html>
 <!--
     layout02.html -git hub업로드 url제출 kakao

@@ -1,0 +1,157 @@
+.content {
+    padding: 100px 0px;
+}
+
+.content .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content figure {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+    /* a속성 패딩값에 위치  */
+}
+
+/* .content figure:nth-child(2){
+    flex: 3;
+} */
+.content figure img {
+    width: 100%;
+}
+
+.sec01 figure a {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    /* 꼭지점 위치 */
+    transform: translate(-50%, -50%);
+    /* 박스위치 옮겨줌 */
+    opacity: 0;
+    /*없애는 방법
+    1.display: none; 애니메이션 안됨
+    2.opacity:0; 손가락 있음 //네비게이션 하단 바
+    3.visibility: hidden; */
+
+    width: 200px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    /* a는 인라인 속성 그러나 포지션을 띄웠을때는 박스처럼됨 */
+    line-height: 24px;
+
+    background: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.sec01 figure a:hover {
+    background: #fff;
+    color: #333;
+    /* transition: 0.5s;
+    여기에 넣어놓으면 백이 보장이 안됨 */
+}
+
+.sec01 figure:hover a {
+    opacity: 1;
+}
+
+
+.sec02 {
+    background: #f2f2f2;
+}
+
+.sec02 .inner {
+    position: relative;
+}
+
+
+.sec02 .inner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* text-align: center;
+    line-height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.5; 글자도 투명해짐*/
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.sec02 .inner:hover a {
+    opacity: 1;
+}
+
+
+
+
+.sec03 {}
+
+.sec03 .inner {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sec03 .inner a {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 46px;
+    transition: 0.5s;
+}
+
+
+.sec03 .inner:hover a {
+    top: calc(100% - 50px);
+}
+
+.service {
+    padding: 100px 0;
+}
+
+.service .inner {
+    width: 250px;
+    margin: 0 auto;
+    background: 1;
+
+}
+
+.service .inner span {
+    display: inline-block;
+    width: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    transition: 0.5s;
+    transition: width 0.5s;
+    /* 말줄임 css */
+}
+
+.service .inner:hover span {
+    width: 200px;
+}
+
+.service .inner:hover i {
+    opacity: 0;
+}
+
+/* 슬릭안에 이미지는 모드 블록 처리
+따라서 textallign center 안먹음 */

@@ -8,14 +8,18 @@
     <title>포지션01 - 기초편</title>
     <style>
         /*
-        position: static;--포지션이 아니게 한다
-        position: absolute; -좌표를 가진다.top,left,bottom,right
-        (뜬다.쪼그라든다.body가 기준이 된다.애미애비도 몰라본다)
-        position: relative; -기준이 된다. 좌표를 가진다. 떠오르지 않고 공간을 차지한다. 쪼그라들지 않는다
-        position:fixed;--화면을 기준으로 떠오른다. 좌표를 가진다. 다른기준따위는 없다
-        position:sticky; - 좀어려운데 박스처럼 있다가 마우스를 내리면 픽스드가 된다
-        * 겹침 그림relative 글자absolute overflow hidden 하면 다없어짐
+        position: static;--기본값
+        position: absolute; -부모요소를 기준으로 브라우저 좌표를 가진다.top,left,bottom,right
+        (부모가 relative 속성일때 자식이 absolute이면 중심좌표가 relative로 바뀌게됨)
+        (부모가 static 속성일때 부모 무시하고 body기준)
+        position: relative; -자기자신을 기준으로
+        position:fixed;-화면을 기준으로 떠오른다. 좌표를 가진다. 다른기준따위는 없다
+        position:sticky; - 박스처럼 있다가 마우스를 내리면 픽스드가 된다
+        * 겹침 그림 relative 글자 absolute overflow hidden 하면 다없어짐
+        포토샵의 레이어 개념:zindex  (static제외하고 zindex로 구성가능)
          */
+
+
         * {
             margin: 0;
         }
@@ -199,4 +203,3 @@
 </body>
 
 </html>
-
