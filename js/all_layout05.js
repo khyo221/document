@@ -23,11 +23,5 @@ $(function(){
     $('.xi-close').on('click', function(){
         $('.headerWrap').slideToggle();
     })
-
-
-    
-   
-
-
     //////////////////////////////
-})
+}) 
