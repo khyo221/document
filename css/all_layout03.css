@@ -42,7 +42,7 @@
     /* a는 인라인 속성 그러나 포지션을 띄웠을때는 박스처럼됨 */
     line-height: 24px;
 
-    background: #333;
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     transition: 0.5s;
 }
@@ -59,6 +59,7 @@
 }
 
 
+/* sec02 */
 .sec02 {
     background: #f2f2f2;
 }
@@ -95,9 +96,7 @@
 
 
 
-
-.sec03 {}
-
+/* sec03 */
 .sec03 .inner {
     position: relative;
     overflow: hidden;
@@ -112,10 +111,11 @@
     height: 100%;
     text-align: center;
 
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom right, blue, pink);
     color: #fff;
     line-height: 46px;
     transition: 0.5s;
+
 }
 
 
@@ -139,13 +139,14 @@
     width: 0px;
     white-space: nowrap;
     overflow: hidden;
+    /* 여러 줄의 텍스트를 한 라인으로 만들어줌 */
     /* text-overflow: ellipsis; */
     transition: 0.5s;
     transition: width 0.5s;
     /* 말줄임 css */
 }
 
-.service .inner:hover span {
+.service .inner:hover span { 
     width: 200px;
 }
 

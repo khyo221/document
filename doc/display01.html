@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>디스플레이01- 디스플레이에 대해서 알아보자.</title>
     <style>
-        /* 웹아이콘 - xeicon */
-        @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+          /* 웹아이콘 - xeicon */
+          @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+        *{margin: 0;padding: 0;box-sizing: border-box;}
         .none {
             display: none;
-            /* 팝업창 없앨 때 쓰임/ 버튼이 사라지고 메뉴 보일때 디스플리에 논에서 블록으로 움직임*/
+            /* 팝업팡 없앨때쓰임/버튼이 사라지고 메뉴 보일떄 디스플리에 논에서 블록으로 움직임*/
         }
-
-        @media(max-width:1000px) {
+        @media(max-width:1000px){
             .none {
-                display: block;
-
-                text-align: right;
-            }
-
+             display: block;
+            
+             text-align: right;
+             }   
             i {
                 position: fixed;
                 top: 50px;
                 right: 50px;
                 font-size: 30px;
                 padding: 10px;
-                background: #ddd;
-
-                /* position:fixed 는 부모 요소와 관계없이 브라우저의 viewport를 기준으로 좌표프로퍼티
-                (top, bottom, left, right)을 사용하여 위치를 이동시킵니다. 
-                스크롤이 되더라도 화면에서 사라지지 않고 항상 같은 곳에 위치가 고정(fixed) */
-
-                /* 만약 포지션앞에 디스플레이 인라인이 되면 아래위 마진 안먹
+                background:#ddd; 
+                 /* 포지션앞에 디스플레이 뒤에 디스플레이 인라인이 되면 아래위 마진 안먹
                 display: inline !important; margin-top: ;
-                포지션이 생기는 순간 박스블록처럼 작동*/
-            }
-
+                포지션이 생기는 순간 박스블록처럼 작동 
+                플롯은 센터 없음/버티컬 얼라인은 큰 레이아웃 잡을떈 안씀 */
+             }
             nav {
                 position: fixed;
                 top: 0;
@@ -55,18 +41,15 @@
                 width: 350px;
                 height: 100vh;
             }
-
             nav a {
                 color: #fff;
             }
-
-            nav.active {
+            nav.active{
                 left: 0;
             }
         }
     </style>
 </head>
-
 <body>
     <nav>
         <ul>
@@ -76,7 +59,7 @@
             <li><a href="#!">menu04</a></li>
             <li><a href="#!">menu05</a></li>
         </ul>
-    </nav>
+    </nav>   
     <div class="none">
         <i class="xi-bars"></i>
     </div>
@@ -91,12 +74,11 @@
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script>
-        $('i').on('click', function () {
+        $('i').on('click', function(){
             $('nav').toggleClass('active')
         });
     </script>
 
-
+    
 </body>
-
 </html>

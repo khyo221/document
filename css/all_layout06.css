@@ -1,46 +1,45 @@
-/* {topBanner : khyo 2022.03.17 최종수정 */
-.topBanner {
+.Wrap {}
+
+
+
+/* { topBanner : khyo 2022.03.17 최종수정 */
+.topBannner {
     padding: 24px 0;
     background: #f3f3f3;
 }
 
-.topBanner .container {
+.topBannner .container {
     position: relative;
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
 }
 
-.topBanner .container h2 {
+.topBannner .container h2 {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 100;
     letter-spacing: 0.040em;
 }
 
-.topBanner .container p {
+.topBannner .container p {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.025em;
 }
 
-.topBanner .container a {
-    display: inline-block;
-    height: 16px;
-    line-height: 14px;
+.topBannner .container a {
     margin-left: 20px;
-    padding: 0 20px;
+    padding: 3px 20px;
     border: 1px solid #333;
     font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
 }
 
-/* 보통 position 그다음 display
-(width bold margin) 그다음 폰트나 디자인 쓰임 */
-
-.topBanner .xi-close {
+.topBannner .container i {
     position: absolute;
     top: 0;
     right: 15px;
@@ -48,10 +47,13 @@
     cursor: pointer;
 }
 
+/*  topBanner : lee 2022.03.17 최종수정 }  */
 
-/* {header : khyo 2022.03.17 최종수정*/
 
 
+/* { header : lee 2022.03.17 최종수정  */
+
+.headerWrap {}
 
 .headerWrap .container {
     display: flex;
@@ -68,6 +70,8 @@
     margin-left: auto;
 }
 
+.gnb {}
+
 .gnb>ul {
     display: flex;
 }
@@ -77,7 +81,7 @@
     padding: 0 20px;
 }
 
-.gnb>ul>li~li:after {
+.gnb>ul>li~li::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -90,9 +94,9 @@
     background: #333;
 }
 
-/*.gnb>ul>li:nth-child(1):after {
-        display: none;
-    }*/
+/* .gnb>ul>li:nth-child(1):after {
+    display:none;
+} */
 
 .headerWrap .searchForm input[type="search"] {
     padding: 3px 0;
@@ -102,7 +106,7 @@
 }
 
 .headerWrap .searchForm input[type="search"]::placeholder {
-    color: rgb(144, 155, 248);
+    color: rgb(177, 178, 250);
     font-size: 13px;
 }
 
@@ -129,17 +133,90 @@
 }
 
 .mainVisual .visualSlide figure {
+    position: relative;
     height: 600px;
-    background: #333;
-
 }
 
-.mainVisual .visualSlide figure .inner{
+.mainVisual .visualSlide figure i {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+
+    font-size: 100px;
+    color: #f00;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainVisual .visualSlide figure.oo i {
+    opacity: 1;
+    animation: heart 1s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mainVisual .visualSlide .msLeft {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    z-index: 999;
+
+    border-top: 100px solid #fff;
+    border-left: 100px solid transparent;
+
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.mainVisual .visualSlide .msLeft.oo {
+    border-top: 100px solid #333;
+}
+
+.mainVisual .visualSlide .msRight {
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    width: 200px;
+    height: 200px;
+
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+
+    transform: translateY(-50%) rotate(135deg) rotateY(45deg);
+}
+
+
+.mainVisual .visualSlide figure .inner {
     width: 1200px;
     margin: 300px auto 0 auto;
     padding: 0 15px;
     color: #fff;
 }
+
+.mainVisual .visualSlide figure.itm02 .inner {
+    color: #333;
+}
+
 .mainVisual .visualSlide figure .inner h3 {
     opacity: 0;
     transform: translateY(100px);
@@ -147,25 +224,27 @@
     font-weight: 900;
     margin-bottom: 30px;
     text-shadow: 0 0 2px #333;
-    transition:1s  0.5s;
+    transition: 1s 0.5s;
 }
+
 .mainVisual .visualSlide figure .inner p {
-    opacity:0;
+    opacity: 0;
     transform: translateY(100px);
     font-size: 15px;
     font-weight: 300;
-    transition:1s 1s;
+    transition: 1s 1s;
 }
 
-
-.mainVisual .visualSlide figure.slick-active .inner h3 {
+.mainVisual .visualSlide figure.oo .inner h3 {
     opacity: 1;
     transform: translateY(0);
 }
-.mainVisual .visualSlide figure.slick-active .inner p{
+
+.mainVisual .visualSlide figure.oo .inner p {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 .mainVisual .visualSlide .itm01 {
     background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
@@ -180,7 +259,6 @@
 }
 
 .mainVisual .visualSlide .slick-dots {
-
     position: absolute;
     left: 50%;
     bottom: 60px;
@@ -194,7 +272,7 @@
     width: 100px;
     height: 5px;
     background: #333;
-    transform: 2s;
+    transition: 2s;
 }
 
 .mainVisual .visualSlide .slick-dots li::after {
@@ -203,14 +281,11 @@
     width: 0;
     height: 100%;
     background: #f00;
-    transition: 0.5s;
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active::after {
-
     width: 100%;
     transition: 3s;
-
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active {
@@ -219,4 +294,278 @@
 
 .mainVisual .visualSlide .slick-dots button {
     display: none;
+}
+
+
+
+.mainProduct {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mainProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.mainProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.mainProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainProduct .container figure {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.mainProduct .container figure .inner {
+    margin-bottom: 15px;
+}
+
+.mainProduct .container figure strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mainProduct .container figure a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+}
+
+.mainProduct .container figure a:hover {
+    background: #ddd;
+    color: #333;
+}
+
+.mainProduct .inner {
+    overflow: hidden;
+}
+
+.mainProduct .inner img {
+    transition: 0.5s;
+}
+
+.mainProduct .inner:hover img {
+    transform: scale(1.5);
+}
+
+.mainProduct .container figure .label {
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+    border-top: 10px solid #f00;
+    border-left: 50px solid #f00;
+    border-bottom: 10px solid #f00;
+    border-right: 10px solid transparent;
+}
+
+.mainProduct .container figure .label span {
+    position: absolute;
+    top: -6px;
+    left: -45px;
+    color: #fff;
+
+    font-size: 14px;
+}
+
+.mainProduct .container figure .label01{
+
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 0;
+    height:0 ;
+    border-color: #f00;
+    border-style: dotted;
+    border-width: 0 0 80px 80px ;
+
+
+
+}
+
+
+.eventBanner {
+    padding: 100px 0;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    filter: grayscale(1);
+}
+
+.eventBanner h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.eventBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.eventBanner i {
+    padding: 7px;
+    background: #333;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.evenetProduct {
+    padding: 100px 0;
+}
+
+.evenetProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.evenetProduct .container>div {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.evenetProduct .left {
+    width: 40%;
+}
+
+.evenetProduct .eProductSlide {
+    padding: 5px;
+    border: 5px solid #ddd;
+}
+
+.evenetProduct .right {
+    display: flex;
+    align-items: center;
+
+    width: 60%;
+}
+
+
+.evenetProduct h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.evenetProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.evenetProduct i {
+    padding: 13px;
+    background: #333;
+    color: #fff;
+    border-radius: 7px;
+    margin: 0 5px;
+}
+
+
+
+.allProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+
+.allProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.allProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.allProduct .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.allProduct .aproductSlide figure {
+    padding: 0 15px;
+}
+
+
+.allProduct .inner {
+    margin-bottom: 20px;
+}
+
+.allProduct .inner+strong {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.allProduct .slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.allProduct .slick-dots li {
+    width: 13px;
+    height: 13px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.allProduct .slick-dots li.slick-active {
+    background: #f00;
+}
+
+.allProduct .slick-dots li button {
+    display: none;
+}
+
+.allProduct i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+}
+
+.allProduct i:first-child {
+    margin-left: -700px;
+}
+
+.allProduct i:last-child {
+    margin-left: 700px;
 }
