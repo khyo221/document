@@ -68,6 +68,43 @@ $(function () {
     });
 
 
+    // 유튜브 플레이어를 쓰자
+
+    $("#bgndVideo").YTPlayer({
+        videoURL: 'mx__tHRvjr4',
+        containment: '.movieBg',
+        autoPlay: true,
+        mute: true,
+        startAt: 0,
+        opacity: 1,
+        showControls: false,
+        playOnlyIfVisible: true,
+    });
+
+    $('.movieBg i:first-child').on('click', function () {
+        $("#bgndVideo").YTPPause();
+    });
+
+
+    $('.movieBg i:last-child').on('click', function () {
+        $("#bgndVideo").YTPPlay();
+    });
+
+    $('.tabMenu li').on('click', function () {
+        var idx = $(this).index();
+        $(this).addClass('oo').siblings().removeClass('oo');
+        $('.tabContent>div').eq(idx).addClass('oo').siblings().removeClass('oo');
+    });
+
+    //제이쿼리 체인
+    //16:9화면비율 0.5626
+
+
+    $('#link').on('change', function () {
+        let linkSite = $(this).val();
+        if (!linkSite) return;
+        window.open(linkSite)
+    });
 
     //////////////////////////////////
 })

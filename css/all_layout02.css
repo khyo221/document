@@ -30,11 +30,9 @@
     justify-content: center;
     gap: 10px;
     transform: translateX(-50%);
-
 }
 
 .mainVisual .slick-dots li {
-
     width: 100px;
     height: 4px;
     border-radius: 2px;
@@ -81,7 +79,6 @@
     display: none;
 }
 
-/* 아이콘으로 넣기 */
 
 .mainVisual .slideArrows i {
     position: absolute;
@@ -90,9 +87,6 @@
     color: rgba(255, 255, 225, 0.5);
     transform: translateY(-50%);
 }
-
-
-
 
 .mainVisual .slideArrows i:first-child {
     left: 100px;

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL 레이아웃 06</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/all_layout06-1.css">
+</head>
+
+
+<body>
+    <div class="Wrap">
+
+        <!-- { topBanner : khyo 2022.03.17 최종수정 -->
+        <div class="topBannner">
+            <div class="container">
+                <p>
+                    15만원 이상 구매 시 원하는 샘플 3종을 직접 선택하여 센트 페어링을 경험해 보세요.
+                    <a href="#!">구매하기</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+        <!--  topBanner : khyo 2022.03.17 최종수정 } -->
+
+        <!-- { header : khyo 2022.03.17 최종수정 -->
+        <header class="headerWrap">
+            <div class="container">
+                <h1>
+                    <div class="logo">
+                        <a href="/">
+                            <img src="./images/jomalonelogo.png" alt="logo">
+                        </a>
+                    </div>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">쇼핑하기</a></li>
+                        <li><a href="#!">선물하기</a></li>
+                        <li><a href="#!">조 말론 런던 하우스</a></li>
+                    </ul>
+                </nav>
+                <div class="searchForm">
+                    <form name="searchForm" id="searchForm" action="javascript:formSumit()">
+                        <input type="search" name="searchvalue" id="searchvalue" placeholder="상품을 입력하여 주세요." required>
+                        <button><i class="xi-search"></i></button>
+                    </form>
+                    <script>
+                        const formSumit = () => {
+                            const searchVal = document.searchForm.searchvalue.value;
+                            if (searchVal.length < 5) {
+                                alert('검색어가 너무 짧습니다.');
+                                return
+                            }
+                            alert(searchVal)
+                        }
+                    </script>
+                </div>
+                <div class="gnbLeft">
+                    <ul>
+                        <li><a href="#!"><i class="xi-user-o xi-x"></i></a></li>
+                        <li><a href="#!"><i class="xi-bookmark-o xi-x"></i></a></li>
+                        <li><a href="#!"><i class="xi-market xi-x"></i></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </header>
+
+
+
+        <main>
+            <!-- { mainVisual : khyo 2022.03.17 최종수정 -->
+            <section class="mainVisual">
+                <div class="visualSlide">
+                    <figure class="itm01">
+                        <div class="inner">
+                            <h3>A New Blossoms Collection </h3>
+                            <p> 이번 컬렉션은 지중해에서 보내는 평화로운 여름날의 모습을 담았습니다.</p>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="inner">
+                            <h3>A Sardinian Summer </h3>
+                            <p>조 말론 런던의 새로운 블로썸 컬렉션과 함께 여름을 미리 맞이해보세요.</p>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="inner">
+                            <h3>Step into Blossoms</h3>
+                            <p> 당신과 당신의 공간을 위한 새로워진 블로썸 컬렉션과 함께 지중해로 떠나 보세요</p>
+                    </figure>
+                </div>
+            </section>
+
+
+
+            <section class="mainProduct">
+                <h2>A New Blossoms Collection </h2>
+                <p>'이번 컬렉션은 지중해에서 보내는 평화로운 여름날의 모습을 담았습니다.'</p>
+                <div class="container">
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/Bitter_Mandarin_Desktop_shorter.png" alt="">
+                        </div>
+                        <strong>로즈 앤 매그놀리아</strong>
+                        <a href="">더 알아보기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/Sea_Daffodil_Desktop_shorter.png" alt="">
+                        </div>
+                        <strong>레드 로즈</strong>
+                        <a href="">더 알아보기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/Silk_Blossom_Desktop_shorter.jpg" alt="">
+                        </div>
+                        <strong>로즈블러쉬</strong>
+                        <a href="">더 알아보기</a>
+                        <div class="label">
+                            <span>HIT !</span>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="eventBanner">
+                <h2>아카이브 컬렉션</h2>
+                <p>런칭 이후 많은 사랑을 받았던 향들을 기념하는 조 말론 런던의 아카이브 컬렉션.</p>
+                <a href="#!">more <i class="xi-arrow-right"></i></a>
+            </section>
+
+            <section class="evenetProduct">
+                <div class="container">
+                    <div class="left">
+                        <div class="eProductSlide">
+                            <figure><img src="./images/jo_sku_L2W501_670x670_0.png" alt=""></figure>
+                            <figure><img src="./images/jo_sku_L92W01_670x670_0.png" alt=""></figure>
+                            <figure><img src="./images/jo_sku_LE2L01_670x670_0.png" alt=""></figure>
+                            <figure><img src="./images/jo_sku_LEY101_670x670_0.png" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="txtinner">
+                            <h3>Room diffusers</h3>
+                            <p>매혹적인 따뜻함으로 공기를 풍성하게 채워보세요. </p>
+                            <i class="xi-pause"></i> <i class="xi-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="allProduct">
+                <h2>BESTSELLER</h2>
+                <p>조 말론 런던 홈의 대표적인 제품들과 함께 당신만의 향기로운 이야기를 채워보세요.</p>
+                <div class="container">
+                    <div class="aproductSlide">
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jo_sku_LE3901_670x670_0 (1).png" alt="">
+                            </div>
+                            <strong>카 디퓨저 하우스</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jo_sku_LCPL01_670x670_0.png" alt="">
+                            </div>
+                            <strong>라임 바질 앤 만다린 카 디퓨저<br> 리필</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jo_sku_L0W201_670x670_0.png" alt="">
+                            </div>
+                            <strong>라임 바질 앤 만다린 홈 캔들</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jo_sku_L2W501_670x670_0.png" alt="">
+                            </div>
+                            <strong>잉글리쉬 페어 앤 프리지아 센트 투 고</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jo_sku_LFFM01_670x670_0.png" alt="">
+                            </div>
+                            <strong>라임 바질 앤 만다린 센트 써라운드 디퓨저</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jo_sku_L0W201_670x670_0 (1).png" alt="">
+                            </div>
+                            <strong>블랙베리 앤 베이 홈 캔들</strong>
+                        </figure>
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-arrow-left"></i>
+                        <i class="xi-arrow-right"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movieBg">
+                <h3>Jo Malone London</h3>
+                <p>상징적인 노트를 담은 Celebrating the Rose 컬렉션을 소개합니다 </p>
+                <div class="btn">
+                    <i class="xi-pause"></i>
+                    <i class="xi-play"></i>
+                </div>
+                <!-- 동영상 자리 -->
+                <div id="bgndVideo" class="player"></div>
+            </section>
+
+
+            <section class="customerArea">
+                <div class="container">
+                    <div>
+                        <ul class="tabMenu">
+                            <li class="oo">News &amp; notice</li>
+                            <li>Event</li>
+                            <li>Issue &amp; doc</li>
+                        </ul>
+                        <div class="tabContent">
+                            <div class="oo">
+                                <ul>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>기분 좋은 조 말론 런던 경험을 위해 준비한 다양한 서비스와 혜택을 만나보세요</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>온라인 부티크 첫 구매 고객께 디럭스 샘플 1종을
+                                                선물로 드립니다.</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>결제 시 쿠폰 코드 창에 WELCOME을 입력하세요.
+                                                (* 복수 코드 적용 불가)</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>15만원 이상 구매하시면 원하는 샘플 3종을 직접 선택하실 수 있습니다.</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>조 말론 런던 제품 구매 시 시그니처 박스에 정성스럽게 포장해 드립니다.</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>온라인 부티크의 특별한 서비스</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>조 말론 런던의 신제품, 컬렉션 하이라이트, 그리고 가장 사랑받는 향과 조 말론 런던의 새로운 소식도
+                                                만나보세요.</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>조 말론 런던 제품 구매 시 시그니처 박스에 정성스럽게 포장해 드립니다.</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <strong>온라인 부티크의 특별한 서비스</strong>
+                                            <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabnextImg">
+                        <img src="./images/Roses_Landing-Page_perfumers_qa_Article-Module_Desktop.jpg" alt="">
+                        <a href="#!" class="btn">
+                            VIEW
+                        </a>
+                        <i class="xi-heart"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footerWrap">
+            <div class="top">
+                <div class="container">
+                    <dl class="left">
+                        <dt><a href="#!">고객서비스</a>
+                        <dd><a href="#!">회사 소개</a>
+                        <dd><a href="#!">소셜 네트워크</a>
+
+                    </dl>
+                    <div class="sns">
+                        <a href="#!" target="_blank"><i class="xi-instagram"></i></a>
+                        <a href="#!"><i class="xi-facebook"></i></a>
+                        <a href="#!"><i class="xi-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <address>
+                        엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), <br>
+                        서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232
+                        사업자등록번호: 211-81-71889 통신판매업신고번호: 강남-15737호<br>
+                        고객관리지원팀: (02) 6971-3228 consumercare-kr@jomalone.com
+                        호스팅서비스 사업자: ㈜엘지유플러스</address>
+                    <div class="link">
+                        <select id="link">
+                            <option value="">소셜네트워크</option>
+                            <option value="http://naver.com">인스타그램</option>
+                            <option value="http://daum.net">페이스북</option>
+                            <option value="http://google.com">유튜브</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/jquery.mb.YTPlayer.min.js"></script>
+<script src="./js/all_layout06-1.js"></script>
+
+</html>

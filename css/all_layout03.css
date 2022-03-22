@@ -25,9 +25,7 @@
 .sec01 figure a {
     position: absolute;
     inset: 50% auto auto 50%;
-    /* 꼭지점 위치 */
     transform: translate(-50%, -50%);
-    /* 박스위치 옮겨줌 */
     opacity: 0;
     /*없애는 방법
     1.display: none; 애니메이션 안됨
@@ -42,7 +40,7 @@
     /* a는 인라인 속성 그러나 포지션을 띄웠을때는 박스처럼됨 */
     line-height: 24px;
 
-    background: rgba(0, 0, 0, 0.5);
+    background: #333;
     color: #fff;
     transition: 0.5s;
 }
@@ -58,8 +56,6 @@
     opacity: 1;
 }
 
-
-/* sec02 */
 .sec02 {
     background: #f2f2f2;
 }
@@ -67,7 +63,6 @@
 .sec02 .inner {
     position: relative;
 }
-
 
 .sec02 .inner a {
     position: absolute;
@@ -81,7 +76,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* opacity: 0.5; 글자도 투명해짐*/
 
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -89,19 +83,14 @@
     transition: 0.5s;
 }
 
-
 .sec02 .inner:hover a {
     opacity: 1;
 }
 
-
-
-/* sec03 */
 .sec03 .inner {
     position: relative;
     overflow: hidden;
 }
-
 
 .sec03 .inner a {
     position: absolute;
@@ -111,13 +100,11 @@
     height: 100%;
     text-align: center;
 
-    background: linear-gradient(to bottom right, blue, pink);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     line-height: 46px;
     transition: 0.5s;
-
 }
-
 
 .sec03 .inner:hover a {
     top: calc(100% - 50px);
@@ -139,20 +126,16 @@
     width: 0px;
     white-space: nowrap;
     overflow: hidden;
-    /* 여러 줄의 텍스트를 한 라인으로 만들어줌 */
     /* text-overflow: ellipsis; */
     transition: 0.5s;
     transition: width 0.5s;
     /* 말줄임 css */
 }
 
-.service .inner:hover span { 
+.service .inner:hover span {
     width: 200px;
 }
 
 .service .inner:hover i {
     opacity: 0;
 }
-
-/* 슬릭안에 이미지는 모드 블록 처리
-따라서 textallign center 안먹음 */
