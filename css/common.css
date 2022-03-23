@@ -27,9 +27,22 @@ body {
 }
 
 img {
+    max-width: 100%;
     vertical-align: middle;
 }
 
+button {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.root_daum_roughmap {
+    width: 100% !important;
+}
+
+.root_daum_roughmap .wrap_controllers {
+    height: 0;
+    padding: 0 !important;
+}
 
 
 

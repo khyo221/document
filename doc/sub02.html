@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .Wrap {}
+
+        header,
+        footer {
+            height: 100px;
+            background: #555;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        article {
+            min-height: 500px;
+            letter-spacing: -0.025em;
+        }
+
+        .subPage .infoMation {
+            padding: 100px 0;
+        }
+
+        .subPage .infoMation h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .subPage .infoMation h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #333;
+            margin: 15px auto;
+        }
+
+        .subPage .infoMation>p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .subPage .infoMation .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .subPage .infoMation .container figure {
+            width: 100%;
+            margin-bottom: 40px;
+            padding: 0 15px;
+        }
+
+
+        .subPage .infoMation .container .left {
+            width: 35%;
+            padding: 0 15px;
+        }
+
+        .subPage .infoMation .container .left h3 {
+            text-align: center;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .subPage .infoMation .container .left h3::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 150px;
+            background: #333;
+            margin: 30px auto;
+        }
+
+        .subPage .infoMation .container .right {
+            width: 65%;
+            padding: 0 15px;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .subPage .infoMation .container .right strong {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+
+        .subPage .infoMation .container .right span {
+            display: block;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+
+
+        <article class="subPage">
+            <section class="infoMation">
+                <h2>Celebrating the Rose</h2>
+                <p>가볍고 신선한 매력부터 깊이 있고 화려한 무드까지. 상징적인 노트를 담은 Celebrating the Rose 컬렉션을 소개합니다
+                </p>
+                <div class="container">
+                    <figure>
+                        <img src="../images/Desktop_Hero.jpg" alt="">
+                    </figure>
+                    <div class="left">
+                        <h3>로즈 앤 매그놀리아</h3>
+                    </div>
+
+                    <div class="right">
+                        <p>
+                            <strong>베이스노트<br></strong>
+                            <span>파출리 <br>
+                                감각적이면서도 깊고 우디한 노트로 잔향을 오해 지속시켜 줍니다.<br>
+                            </span>
+
+                            <strong>탑노트<br></strong>
+                            <span> 매그놀리아<br>
+                                투명한 플로럴 향과 선명한 레몬이 어우러져 부드러우면서도 섬세한 바닐라 향기를 전해줍니다.<br>
+                            </span>
+
+                            <strong>하트노트<br></strong>
+                            <span>로즈<br>
+                                디마스크 로즈와 그린 탑 노트가 어우러져 반짝이고 신선한 플로랄 분위기를 완성합니다.
+                            </span>
+                            <strong>가볍고 신선한 매력부터 깊이 있고 화려한 무드까지. </strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+
+
+
+
+
+        <footer>
+            &copy;khyo
+        </footer>
+    </div>
+</body>
+
+</html>

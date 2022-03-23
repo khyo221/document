@@ -58,4 +58,7 @@
 }
 .xi-close{
     position: absolute; top: 0; right: 30%; 
+    background-color: #7684ff;
+    padding: 10px;
+    border-radius: 20px;
 }

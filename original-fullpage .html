@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <style>
+        .khyo {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .section h3 {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: 0.5s;
+        }
+
+        .section .active h3 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="khyo">
+        <div class="section">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="section">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="section">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="section">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="section">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/fullpage.min.js"></script>
+
+<script>
+    $(function () {
+        $('.khyo').fullpage({
+            navigation: true,
+        });
+    })
+</script>
+
+
+
+</html>

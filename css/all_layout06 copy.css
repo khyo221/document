@@ -1,7 +1,7 @@
 /* { topBanner : khyo 2022.03.17 최종수정 */
 .topBannner {
-    padding: 20px 0;
-    background: #1c1c1c;
+    padding: 24px 0;
+    background: #f3f3f3;
 }
 
 .topBannner .container {
@@ -9,11 +9,18 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.topBannner .container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 0.040em;
 }
 
 .topBannner .container p {
-    color: #fff;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.025em;
@@ -22,9 +29,10 @@
 .topBannner .container a {
     margin-left: 20px;
     padding: 3px 20px;
-    border: 1px solid #fff;
+    border: 1px solid #333;
     font-size: 13px;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .topBannner .container i {
@@ -32,7 +40,6 @@
     top: 0;
     right: 15px;
     font-size: 24px;
-    color: #fff;
     cursor: pointer;
 }
 
@@ -41,18 +48,8 @@
 
 
 /* { header : lee 2022.03.17 최종수정  */
-body {
-    background: #fcf9ee;
-}
 
-.headerWrap h1 {
-    padding: 20px 0;
-    text-align: center;
-}
 
-.headerWrap h1 img {
-    width: 125px;
-}
 
 .headerWrap .container {
     display: flex;
@@ -92,24 +89,9 @@ body {
     background: #000;
 }
 
-.gnbLeft>ul {
-    display: flex;
-}
-
-.gnbLeft .xi-x {
-    position: relative;
-    padding: 0 15px;
-    font-size: 27px;
-    vertical-align: middle;
-
-}
-
 /* .gnb>ul>li:nth-child(1):after {
-        display:none;
-    } */
-.headerWrap .searchForm {
-    padding: 0;
-}
+    display:none;
+} */
 
 .headerWrap .searchForm input[type="search"] {
     padding: 3px 0;
@@ -119,7 +101,7 @@ body {
 }
 
 .headerWrap .searchForm input[type="search"]::placeholder {
-    color: #333;
+    color: #f7b77b;
     font-size: 13px;
 }
 
@@ -134,13 +116,12 @@ body {
 }
 
 .headerWrap .searchForm button i {
-    font-size: 25px;
-    color: #333;
-    vertical-align: middle;
+    font-size: 15px;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    border-radius: 50%;
 }
-
-/*  header : lee 2022.03.17 최종수정}  */
-
 
 .mainVisual .visualSlide {
     border-top: 1px solid #ddd;
@@ -151,20 +132,61 @@ body {
     height: 600px;
 }
 
+.mainVisual .visualSlide figure i {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+
+    font-size: 100px;
+    color: #f7b77b;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.mainVisual .visualSlide figure.oo i {
+    opacity: 1;
+    animation: heart 1s infinite;
+}
+
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .mainVisual .visualSlide .msLeft {
     position: absolute;
     top: 50%;
     left: 200px;
     z-index: 999;
 
-    border-top: 50px solid #fff;
-    border-left: 50px solid transparent;
+    border-top: 100px solid #fff;
+    border-left: 100px solid transparent;
 
     transform: translateY(-50%) rotate(-135deg);
 }
 
 .mainVisual .visualSlide .msLeft.oo {
-    border-top: 50px solid #000;
+    border-top: 100px solid #000;
 }
 
 
@@ -174,31 +196,31 @@ body {
     right: 200px;
     z-index: 999;
 
-    border-top: 50px solid #fff;
-    border-right: 50px solid transparent;
+    border-top: 100px solid #fff;
+    border-right: 100px solid transparent;
 
     transform: translateY(-50%) rotate(135deg);
 }
 
 .mainVisual .visualSlide .msRight.oo {
-    border-top: 50px solid #000;
+    border-top: 100px solid #000;
 }
 
 
 
 
 /* .mainVisual .visualSlide .msRight {
-        position: absolute;
-        top: 50%;
-        right: 200px;
-        width: 200px;
-        height: 200px;
-    
-        border-top: 1px solid #fff;
-        border-left: 1px solid #fff;
-    
-        transform: translateY(-50%) rotate(135deg) rotateY(45deg);
-    } */
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    width: 200px;
+    height: 200px;
+
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+
+    transform: translateY(-50%) rotate(135deg) rotateY(45deg);
+} */
 
 
 .mainVisual .visualSlide figure .inner {
@@ -242,15 +264,15 @@ body {
 
 
 .mainVisual .visualSlide .itm01 {
-    background: url(../images/1_Hero_Image_Desktop.jpg) no-repeat top center/cover;
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm02 {
-    background: url(../images/22A04_Blossoms_3_Homepage_Desktop_Sea_Daffodil.jpg) no-repeat center center/cover;
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm03 {
-    background: url(../images/22A04_Blossoms_1_Homepage_Hero_Desktop.jpg) no-repeat center center/cover;
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .slick-dots {
@@ -266,7 +288,7 @@ body {
 .mainVisual .visualSlide .slick-dots li {
     width: 100px;
     height: 5px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #fff;
     transition: 2s;
 }
 
@@ -275,7 +297,7 @@ body {
     display: block;
     width: 0;
     height: 100%;
-    background: #fcf9ee;
+    background: #f7b77b;
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active::after {
@@ -292,7 +314,6 @@ body {
 }
 
 
-/* mainProduct */
 
 .mainProduct {
     padding: 100px 0;
@@ -363,9 +384,9 @@ body {
     top: -10px;
     right: 0;
 
-    border-top: 10px solid #000;
-    border-left: 50px solid #000;
-    border-bottom: 10px solid #000;
+    border-top: 10px solid #f7b77b;
+    border-left: 50px solid #f7b77b;
+    border-bottom: 10px solid #f7b77b;
     border-right: 10px solid transparent;
 }
 
@@ -373,14 +394,14 @@ body {
     position: absolute;
     top: -6px;
     left: -45px;
-    color: #fcf9ee;
+    color: #000;
 
     font-size: 14px;
 }
 
 .eventBanner {
     padding: 100px 0;
-    background: url(../images/DAJMSHOT7vRGB1920x608.jpg) no-repeat fixed center center/cover;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
     text-align: center;
     color: #fff;
     filter: grayscale(1);
@@ -427,7 +448,7 @@ body {
 
 .evenetProduct .eProductSlide {
     padding: 5px;
-    border: 5px solid #f8f1d8;
+    border: 5px solid #ddd;
 }
 
 .evenetProduct .right {
@@ -465,7 +486,7 @@ body {
     position: relative;
     padding: 100px 0;
     text-align: center;
-    background: #f8f1d8;
+    background: #f2f2f2;
 }
 
 
@@ -521,7 +542,7 @@ body {
 
 
 .allProduct .slick-dots li.slick-active {
-    background: #ecda97;
+    background: #f7b77b;
 }
 
 .allProduct .slick-dots li button {
@@ -584,7 +605,7 @@ body {
 
 .customerArea {
     padding: 100px 0;
-    background: #fcf9ee;
+    background: #f2f2f2;
 }
 
 .customerArea .container {
@@ -606,27 +627,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.8);
-    border: 3px solid #ecda97;
+    border: 3px solid #f7b77b;
     padding: 15px 30px;
-    border-radius: 30px;
-    color: #ecda97;
+    border-radius: 10px;
+    color: #f7b77b;
     transition: 0.5s;
 }
 
 .customerArea .container>div:hover .btn:hover {
     background: #fff;
-    border: 3px solid #ecda97;
+    border: 3px solid #f7b77b;
     border-radius: 20px;
-    color: #ecda97;
+    color: #f7b77b;
 }
 
 .customerArea .container>div img {
     filter: grayscale(1);
-    transition: 0.5s
-}
-
-.customerArea .container .btn:hover {
-    filter: grayscale(0);
     transition: 0.5s
 }
 
@@ -648,8 +664,7 @@ body {
 }
 
 .customerArea .tabMenu>li.oo {
-    background: #ecda97;
-    color: #000;
+    background: #f7b77b;
 }
 
 .customerArea .tabMenu>li~li {
@@ -668,11 +683,9 @@ body {
 .customerArea .tabContent a {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #333;
+    border: 1px dotted #333;
     padding: 5px 0;
-    border-bottom: 1px solid #fcf9ee;
-    border-right: #fcf9ee;
-    border-left: #fcf9ee;
+    border-bottom: 1px solid #ddd;
 }
 
 .customerArea .tabContent strong {
@@ -693,7 +706,7 @@ body {
     right: 30px;
 
     font-size: 50px;
-    color: #ecda97;
+    color: #f7b77b;
 
     opacity: 0;
     transition: 0.5s;
@@ -702,28 +715,6 @@ body {
 .customerArea .container .tabnextImg i {
     opacity: 1;
     animation: heart 1s infinite;
-}
-
-@keyframes heart {
-    0% {
-        transform: scale(1);
-    }
-
-    20% {
-        transform: scale(0.5);
-    }
-
-    50% {
-        transform: scale(1);
-    }
-
-    70% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }
 
 
@@ -781,7 +772,6 @@ body {
 
 .footerWrap .container>* {
     padding: 0 15px;
-    line-height: 1.5;
 }
 
 .footerWrap .link select {
@@ -815,26 +805,8 @@ body {
     height: 30px;
     outline: none;
     border: 1px solid #333;
-    background: #ecda97;
-    color: #333;
+    background: #f00;
+    color: #fff;
     text-transform: uppercase;
     font-size: 14px;
-}
-
-.toTop {
-    position: fixed;
-    inset: auto 50px 100px auto;
-    display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-
-.toTop i {
-    padding: 10px;
-    background: #ecda97;
-    color: #333;
-    border: 1px solid#333;
-    border-radius: 50%;
 }

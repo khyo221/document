@@ -71,7 +71,7 @@ $(function () {
     // 유튜브 플레이어를 쓰자
 
     $("#bgndVideo").YTPlayer({
-        videoURL: '2VhvTWdB0zI',
+        videoURL: 'dSTahTUVYao',
         containment: '.movieBg',
         autoPlay: true,
         mute: true,
@@ -110,22 +110,7 @@ $(function () {
         $(this).parent().hide();
     });
 
-    $('.toTop').on('click', function () {
-        $('html,body').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
 
-    $(window).on('scroll', function () {
-        let sct = $(window).scrollTop();
-        console.log()
-        if (sct > 500) {
-            $('.toTop').fadeIn(1000);
-        } else {
-            $('.toTop').fadeOut(1000);
-        }
-    })
 
 
     //////////////////////////////////
